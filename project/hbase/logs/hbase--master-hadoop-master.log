@@ -2222,3 +2222,96 @@ file locks                      (-x) unlimited
 2022-03-12 01:59:20,939 INFO  [1312570969@qtp-1378413062-2-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session establishment complete on server hadoop-slave2.hadoop/172.19.0.2:2181, sessionid = 0x27f7bcc48540005, negotiated timeout = 40000
 2022-03-12 01:59:21,091 INFO  [1312570969@qtp-1378413062-2] zookeeper.ZooKeeper: Session: 0x27f7bcc48540005 closed
 2022-03-12 01:59:21,095 INFO  [1312570969@qtp-1378413062-2-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2022-03-12 11:02:01,649 INFO  [1691693970@qtp-1378413062-0-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 291882ms for sessionid 0x17f7bcc47e60007, closing socket connection and attempting reconnect
+2022-03-12 11:02:01,650 INFO  [master/hadoop-master/172.19.0.5:16000-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 292244ms for sessionid 0x27f7bcc48540003, closing socket connection and attempting reconnect
+2022-03-12 11:02:01,664 WARN  [master/hadoop-master/172.19.0.5:16000] util.Sleeper: We slept 283130ms instead of 3000ms, this is likely due to a long garbage collecting pause and it's usually bad, see http://hbase.apache.org/book.html#trouble.rs.runtime.zkexpired
+2022-03-12 11:02:01,740 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Client session timed out, have not heard from server in 292750ms for sessionid 0x27f7bcc48540001, closing socket connection and attempting reconnect
+2022-03-12 11:02:01,830 INFO  [JvmPauseMonitor] util.JvmPauseMonitor: Detected pause in JVM or host machine (eg GC): pause of approximately 5750ms
+No GCs detected
+2022-03-12 11:02:01,943 INFO  [1691693970@qtp-1378413062-0-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-12 11:02:01,945 INFO  [1691693970@qtp-1378413062-0-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Socket connection established to hadoop-slave2.hadoop/172.19.0.2:2181, initiating session
+2022-03-12 11:02:02,279 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-12 11:02:02,281 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Socket connection established to hadoop-slave1.hadoop/172.19.0.3:2181, initiating session
+2022-03-12 11:02:02,580 INFO  [master/hadoop-master/172.19.0.5:16000-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-12 11:02:02,581 INFO  [master/hadoop-master/172.19.0.5:16000-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Socket connection established to hadoop-slave1.hadoop/172.19.0.3:2181, initiating session
+2022-03-12 11:02:02,967 INFO  [1691693970@qtp-1378413062-0-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x17f7bcc47e60007 has expired, closing socket connection
+2022-03-12 11:02:02,970 WARN  [1691693970@qtp-1378413062-0-EventThread] client.ConnectionManager$HConnectionImplementation: This client just lost it's session with ZooKeeper, closing it. It will be recreated next time someone needs it
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:700)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:611)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2022-03-12 11:02:03,057 INFO  [1691693970@qtp-1378413062-0-EventThread] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x17f7bcc47e60007
+2022-03-12 11:02:03,072 INFO  [1691693970@qtp-1378413062-0-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2022-03-12 11:02:03,738 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Unable to reconnect to ZooKeeper service, session 0x27f7bcc48540001 has expired, closing socket connection
+2022-03-12 11:02:03,739 FATAL [main-EventThread] master.HMaster: master:16000-0x27f7bcc48540001, quorum=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181, baseZNode=/hbase-unsecure master:16000-0x27f7bcc48540001 received expired from ZooKeeper, aborting
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.connectionEvent(ZooKeeperWatcher.java:700)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.process(ZooKeeperWatcher.java:611)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+2022-03-12 11:02:03,754 INFO  [main-EventThread] regionserver.HRegionServer: STOPPED: master:16000-0x27f7bcc48540001, quorum=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181, baseZNode=/hbase-unsecure master:16000-0x27f7bcc48540001 received expired from ZooKeeper, aborting
+2022-03-12 11:02:03,763 INFO  [main-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2022-03-12 11:02:03,764 INFO  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: Stopping infoServer
+2022-03-12 11:02:04,002 INFO  [master/hadoop-master/172.19.0.5:16000] mortbay.log: Stopped SelectChannelConnector@0.0.0.0:16010
+2022-03-12 11:02:04,062 INFO  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: stopping server hadoop-master,16000,1647050269289
+2022-03-12 11:02:04,063 INFO  [master/hadoop-master/172.19.0.5:16000] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x27f7bcc48540003
+2022-03-12 11:02:04,371 INFO  [master/hadoop-master/172.19.0.5:16000] zookeeper.ZooKeeper: Session: 0x27f7bcc48540003 closed
+2022-03-12 11:02:04,371 INFO  [master/hadoop-master/172.19.0.5:16000-EventThread] zookeeper.ClientCnxn: EventThread shut down
+2022-03-12 11:02:04,375 INFO  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: stopping server hadoop-master,16000,1647050269289; all regions closed.
+2022-03-12 11:02:04,379 INFO  [master/hadoop-master/172.19.0.5:16000] hbase.ChoreService: Chore service for: hadoop-master,16000,1647050269289 had [] on shutdown
+2022-03-12 11:02:19,396 ERROR [master/hadoop-master/172.19.0.5:16000] zookeeper.RecoverableZooKeeper: ZooKeeper getData failed after 4 attempts
+2022-03-12 11:02:19,397 WARN  [master/hadoop-master/172.19.0.5:16000] zookeeper.ZKUtil: master:16000-0x27f7bcc48540001, quorum=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181, baseZNode=/hbase-unsecure Unable to get data of znode /hbase-unsecure/master
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase-unsecure/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:359)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:623)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:148)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:267)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1132)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1084)
+	at java.lang.Thread.run(Thread.java:745)
+2022-03-12 11:02:19,400 ERROR [master/hadoop-master/172.19.0.5:16000] zookeeper.ZooKeeperWatcher: master:16000-0x27f7bcc48540001, quorum=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181, baseZNode=/hbase-unsecure Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase-unsecure/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:359)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:623)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:148)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:267)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1132)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1084)
+	at java.lang.Thread.run(Thread.java:745)
+2022-03-12 11:02:19,403 ERROR [master/hadoop-master/172.19.0.5:16000] master.ActiveMasterManager: master:16000-0x27f7bcc48540001, quorum=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181, baseZNode=/hbase-unsecure Error deleting our own master address node
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase-unsecure/master
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.getData(RecoverableZooKeeper.java:359)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.getData(ZKUtil.java:623)
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:148)
+	at org.apache.hadoop.hbase.master.ActiveMasterManager.stop(ActiveMasterManager.java:267)
+	at org.apache.hadoop.hbase.master.HMaster.stopServiceThreads(HMaster.java:1132)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1084)
+	at java.lang.Thread.run(Thread.java:745)
+2022-03-12 11:02:19,405 INFO  [master/hadoop-master/172.19.0.5:16000] ipc.RpcServer: Stopping server on 16000
+2022-03-12 11:02:19,407 INFO  [RpcServer.listener,port=16000] ipc.RpcServer: RpcServer.listener,port=16000: stopping
+2022-03-12 11:02:19,419 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopped
+2022-03-12 11:02:19,419 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: stopping
+2022-03-12 11:02:34,502 ERROR [master/hadoop-master/172.19.0.5:16000] zookeeper.RecoverableZooKeeper: ZooKeeper delete failed after 4 attempts
+2022-03-12 11:02:34,503 WARN  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: Failed deleting my ephemeral node
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /hbase-unsecure/rs/hadoop-master,16000,1647050269289
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.delete(ZooKeeper.java:873)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.delete(RecoverableZooKeeper.java:178)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1236)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.deleteNode(ZKUtil.java:1225)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.deleteMyEphemeralNode(HRegionServer.java:1418)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.run(HRegionServer.java:1092)
+	at java.lang.Thread.run(Thread.java:745)
+2022-03-12 11:02:34,512 INFO  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: stopping server hadoop-master,16000,1647050269289; zookeeper connection closed.
+2022-03-12 11:02:34,517 INFO  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: master/hadoop-master/172.19.0.5:16000 exiting
