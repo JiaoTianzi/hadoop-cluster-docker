@@ -2315,3 +2315,401 @@ org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = 
 	at java.lang.Thread.run(Thread.java:745)
 2022-03-12 11:02:34,512 INFO  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: stopping server hadoop-master,16000,1647050269289; zookeeper connection closed.
 2022-03-12 11:02:34,517 INFO  [master/hadoop-master/172.19.0.5:16000] regionserver.HRegionServer: master/hadoop-master/172.19.0.5:16000 exiting
+Wed Mar 16 13:02:37 UTC 2022 Starting master on hadoop-master
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 62377
+max locked memory       (kbytes, -l) 65536
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1048576
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) unlimited
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+2022-03-16 13:02:46,782 INFO  [main] util.VersionInfo: HBase 1.2.1
+2022-03-16 13:02:46,800 INFO  [main] util.VersionInfo: Source code repository git://asf-dev/home/busbey/projects/hbase revision=8d8a7107dc4ccbf36a92f64675dc60392f85c015
+2022-03-16 13:02:46,816 INFO  [main] util.VersionInfo: Compiled by busbey on Wed Mar 30 11:19:21 CDT 2016
+2022-03-16 13:02:46,816 INFO  [main] util.VersionInfo: From source with checksum f4bb4a14bb4e0b72b46f729dae98a772
+2022-03-16 13:02:52,925 INFO  [main] util.ServerCommandLine: env:HBASE_LOGFILE=hbase--master-hadoop-master.log
+2022-03-16 13:02:52,925 INFO  [main] util.ServerCommandLine: env:PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/hadoop/bin:/usr/local/hadoop/sbin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/spark/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/spark/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/spark/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/spark/bin:/root/project/sqoop/bin:/root/project/hbase/bin:/root/project/spark/bin:/root/project/scala/bin
+2022-03-16 13:02:52,926 INFO  [main] util.ServerCommandLine: env:LESSCLOSE=/usr/bin/lesspipe %s %s
+2022-03-16 13:02:52,926 INFO  [main] util.ServerCommandLine: env:HBASE_REGIONSERVER_OPTS= -XX:PermSize=128m -XX:MaxPermSize=128m
+2022-03-16 13:02:52,926 INFO  [main] util.ServerCommandLine: env:JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+2022-03-16 13:02:52,926 INFO  [main] util.ServerCommandLine: env:TERM=xterm
+2022-03-16 13:02:52,927 INFO  [main] util.ServerCommandLine: env:SQOOP_HOME=/root/project/sqoop
+2022-03-16 13:02:52,927 INFO  [main] util.ServerCommandLine: env:SPARK_HOME=/root/project/spark
+2022-03-16 13:02:52,927 INFO  [main] util.ServerCommandLine: env:LD_LIBRARY_PATH=:/usr/local/hadoop/lib/native
+2022-03-16 13:02:52,927 INFO  [main] util.ServerCommandLine: env:HBASE_REST_OPTS=
+2022-03-16 13:02:52,927 INFO  [main] util.ServerCommandLine: env:PWD=/root/project/bin
+2022-03-16 13:02:52,936 INFO  [main] util.ServerCommandLine: env:SCALA_HOME=/root/project/scala
+2022-03-16 13:02:52,936 INFO  [main] util.ServerCommandLine: env:HBASE_ROOT_LOGGER=INFO,RFA
+2022-03-16 13:02:52,949 INFO  [main] util.ServerCommandLine: env:LESSOPEN=| /usr/bin/lesspipe %s
+2022-03-16 13:02:52,951 INFO  [main] util.ServerCommandLine: env:HBASE_ENV_INIT=true
+2022-03-16 13:02:52,951 INFO  [main] util.ServerCommandLine: env:HBASE_IDENT_STRING=
+2022-03-16 13:02:52,951 INFO  [main] util.ServerCommandLine: env:HBASE_ZNODE_FILE=/tmp/hbase--master.znode
+2022-03-16 13:02:52,952 INFO  [main] util.ServerCommandLine: env:HBASE_LOG_PREFIX=hbase--master-hadoop-master
+2022-03-16 13:02:52,952 INFO  [main] util.ServerCommandLine: env:HBASE_LOG_DIR=/root/project/hbase/logs
+2022-03-16 13:02:52,954 INFO  [main] util.ServerCommandLine: env:CLASSPATH=/root/project/hbase/conf:/usr/lib/jvm/java-7-openjdk-amd64//lib/tools.jar:/root/project/hbase:/root/project/hbase/lib/activation-1.1.jar:/root/project/hbase/lib/antisamy-1.4.3.jar:/root/project/hbase/lib/aopalliance-1.0.jar:/root/project/hbase/lib/apacheds-i18n-2.0.0-M15.jar:/root/project/hbase/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/root/project/hbase/lib/api-asn1-api-1.0.0-M20.jar:/root/project/hbase/lib/api-util-1.0.0-M20.jar:/root/project/hbase/lib/asm-3.1.jar:/root/project/hbase/lib/avro-1.7.4.jar:/root/project/hbase/lib/batik-css-1.7.jar:/root/project/hbase/lib/batik-ext-1.7.jar:/root/project/hbase/lib/batik-util-1.7.jar:/root/project/hbase/lib/bsh-core-2.0b4.jar:/root/project/hbase/lib/commons-beanutils-1.7.0.jar:/root/project/hbase/lib/commons-beanutils-core-1.7.0.jar:/root/project/hbase/lib/commons-cli-1.2.jar:/root/project/hbase/lib/commons-codec-1.9.jar:/root/project/hbase/lib/commons-collections-3.2.2.jar:/root/project/hbase/lib/commons-compress-1.4.1.jar:/root/project/hbase/lib/commons-configuration-1.6.jar:/root/project/hbase/lib/commons-daemon-1.0.13.jar:/root/project/hbase/lib/commons-digester-1.8.jar:/root/project/hbase/lib/commons-el-1.0.jar:/root/project/hbase/lib/commons-fileupload-1.2.jar:/root/project/hbase/lib/commons-httpclient-3.1.jar:/root/project/hbase/lib/commons-io-2.4.jar:/root/project/hbase/lib/commons-lang-2.6.jar:/root/project/hbase/lib/commons-logging-1.2.jar:/root/project/hbase/lib/commons-math-2.2.jar:/root/project/hbase/lib/commons-math3-3.1.1.jar:/root/project/hbase/lib/commons-net-3.1.jar:/root/project/hbase/lib/disruptor-3.3.0.jar:/root/project/hbase/lib/esapi-2.1.0.jar:/root/project/hbase/lib/findbugs-annotations-1.3.9-1.jar:/root/project/hbase/lib/guava-12.0.1.jar:/root/project/hbase/lib/guice-3.0.jar:/root/project/hbase/lib/guice-servlet-3.0.jar:/root/project/hbase/lib/hadoop-annotations-2.5.1.jar:/root/project/hbase/lib/hadoop-auth-2.5.1.jar:/root/project/hbase/lib/hadoop-client-2.5.1.jar:/root/project/hbase/lib/hadoop-common-2.5.1.jar:/root/project/hbase/lib/hadoop-hdfs-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-app-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-common-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-core-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-jobclient-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-shuffle-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-api-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-client-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-common-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-server-common-2.5.1.jar:/root/project/hbase/lib/hbase-annotations-1.2.1-tests.jar:/root/project/hbase/lib/hbase-annotations-1.2.1.jar:/root/project/hbase/lib/hbase-client-1.2.1.jar:/root/project/hbase/lib/hbase-common-1.2.1-tests.jar:/root/project/hbase/lib/hbase-common-1.2.1.jar:/root/project/hbase/lib/hbase-examples-1.2.1.jar:/root/project/hbase/lib/hbase-external-blockcache-1.2.1.jar:/root/project/hbase/lib/hbase-hadoop-compat-1.2.1.jar:/root/project/hbase/lib/hbase-hadoop2-compat-1.2.1.jar:/root/project/hbase/lib/hbase-it-1.2.1-tests.jar:/root/project/hbase/lib/hbase-it-1.2.1.jar:/root/project/hbase/lib/hbase-prefix-tree-1.2.1.jar:/root/project/hbase/lib/hbase-procedure-1.2.1.jar:/root/project/hbase/lib/hbase-protocol-1.2.1.jar:/root/project/hbase/lib/hbase-resource-bundle-1.2.1.jar:/root/project/hbase/lib/hbase-rest-1.2.1.jar:/root/project/hbase/lib/hbase-server-1.2.1-tests.jar:/root/project/hbase/lib/hbase-server-1.2.1.jar:/root/project/hbase/lib/hbase-shell-1.2.1.jar:/root/project/hbase/lib/hbase-thrift-1.2.1.jar:/root/project/hbase/lib/htrace-core-3.1.0-incubating.jar:/root/project/hbase/lib/httpclient-4.2.5.jar:/root/project/hbase/lib/httpcore-4.4.1.jar:/root/project/hbase/lib/jackson-core-asl-1.9.13.jar:/root/project/hbase/lib/jackson-jaxrs-1.9.13.jar:/root/project/hbase/lib/jackson-mapper-asl-1.9.13.jar:/root/project/hbase/lib/jackson-xc-1.9.13.jar:/root/project/hbase/lib/jamon-runtime-2.4.1.jar:/root/project/hbase/lib/jasper-compiler-5.5.23.jar:/root/project/hbase/lib/jasper-runtime-5.5.23.jar:/root/project/hbase/lib/java-xmlbuilder-0.4.jar:/root/project/hbase/lib/javax.inject-1.jar:/root/project/hbase/lib/jaxb-api-2.2.2.jar:/root/project/hbase/lib/jaxb-impl-2.2.3-1.jar:/root/project/hbase/lib/jcodings-1.0.8.jar:/root/project/hbase/lib/jersey-client-1.9.jar:/root/project/hbase/lib/jersey-core-1.9.jar:/root/project/hbase/lib/jersey-guice-1.9.jar:/root/project/hbase/lib/jersey-json-1.9.jar:/root/project/hbase/lib/jersey-server-1.9.jar:/root/project/hbase/lib/jets3t-0.9.0.jar:/root/project/hbase/lib/jettison-1.3.3.jar:/root/project/hbase/lib/jetty-6.1.26.jar:/root/project/hbase/lib/jetty-sslengine-6.1.26.jar:/root/project/hbase/lib/jetty-util-6.1.26.jar:/root/project/hbase/lib/joni-2.1.2.jar:/root/project/hbase/lib/jruby-complete-1.6.8.jar:/root/project/hbase/lib/jsch-0.1.42.jar:/root/project/hbase/lib/jsp-2.1-6.1.14.jar:/root/project/hbase/lib/jsp-api-2.1-6.1.14.jar:/root/project/hbase/lib/jsr305-1.3.9.jar:/root/project/hbase/lib/junit-4.12.jar:/root/project/hbase/lib/leveldbjni-all-1.8.jar:/root/project/hbase/lib/libthrift-0.9.3.jar:/root/project/hbase/lib/log4j-1.2.17.jar:/root/project/hbase/lib/metrics-core-2.2.0.jar:/root/project/hbase/lib/nekohtml-1.9.12.jar:/root/project/hbase/lib/netty-all-4.0.23.Final.jar:/root/project/hbase/lib/paranamer-2.3.jar:/root/project/hbase/lib/protobuf-java-2.5.0.jar:/root/project/hbase/lib/servlet-api-2.5-6.1.14.jar:/root/project/hbase/lib/servlet-api-2.5.jar:/root/project/hbase/lib/slf4j-api-1.7.7.jar:/root/project/hbase/lib/slf4j-log4j12-1.7.5.jar:/root/project/hbase/lib/snappy-java-1.0.4.1.jar:/root/project/hbase/lib/spymemcached-2.11.6.jar:/root/project/hbase/lib/xalan-2.7.0.jar:/root/project/hbase/lib/xml-apis-1.3.03.jar:/root/project/hbase/lib/xml-apis-ext-1.3.04.jar:/root/project/hbase/lib/xmlenc-0.52.jar:/root/project/hbase/lib/xom-1.2.5.jar:/root/project/hbase/lib/xz-1.0.jar:/root/project/hbase/lib/zookeeper-3.4.6.jar:/usr/local/hadoop/etc/hadoop:/usr/local/hadoop/share/hadoop/common/lib/*:/usr/local/hadoop/share/hadoop/common/*:/usr/local/hadoop/share/hadoop/hdfs:/usr/local/hadoop/share/hadoop/hdfs/lib/*:/usr/local/hadoop/share/hadoop/hdfs/*:/usr/local/hadoop/share/hadoop/yarn/lib/*:/usr/local/hadoop/share/hadoop/yarn/*:/usr/local/hadoop/share/hadoop/mapreduce/lib/*:/usr/local/hadoop/share/hadoop/mapreduce/*:/usr/local/hadoop/contrib/capacity-scheduler/*.jar
+2022-03-16 13:02:52,955 INFO  [main] util.ServerCommandLine: env:HBASE_MASTER_OPTS= -XX:PermSize=128m -XX:MaxPermSize=128m
+2022-03-16 13:02:52,955 INFO  [main] util.ServerCommandLine: env:HBASE_MANAGES_ZK=false
+2022-03-16 13:02:52,966 INFO  [main] util.ServerCommandLine: env:HOSTNAME=hadoop-master
+2022-03-16 13:02:52,966 INFO  [main] util.ServerCommandLine: env:HADOOP_HOME=/usr/local/hadoop
+2022-03-16 13:02:52,966 INFO  [main] util.ServerCommandLine: env:HBASE_NICENESS=0
+2022-03-16 13:02:52,966 INFO  [main] util.ServerCommandLine: env:HBASE_OPTS=-XX:+UseConcMarkSweepGC   -XX:PermSize=128m -XX:MaxPermSize=128m -Dhbase.log.dir=/root/project/hbase/logs -Dhbase.log.file=hbase--master-hadoop-master.log -Dhbase.home.dir=/root/project/hbase -Dhbase.id.str= -Dhbase.root.logger=INFO,RFA -Djava.library.path=/usr/local/hadoop/lib/native -Dhbase.security.logger=INFO,RFAS
+2022-03-16 13:02:52,967 INFO  [main] util.ServerCommandLine: env:HBASE_START_FILE=/tmp/hbase--master.autorestart
+2022-03-16 13:02:52,968 INFO  [main] util.ServerCommandLine: env:HBASE_SECURITY_LOGGER=INFO,RFAS
+2022-03-16 13:02:52,972 INFO  [main] util.ServerCommandLine: env:HBASE_THRIFT_OPTS=
+2022-03-16 13:02:52,972 INFO  [main] util.ServerCommandLine: env:HBASE_HOME=/root/project/hbase
+2022-03-16 13:02:52,972 INFO  [main] util.ServerCommandLine: env:LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+2022-03-16 13:02:52,972 INFO  [main] util.ServerCommandLine: env:HOME=/root
+2022-03-16 13:02:52,974 INFO  [main] util.ServerCommandLine: env:SHLVL=4
+2022-03-16 13:02:52,974 INFO  [main] util.ServerCommandLine: env:MALLOC_ARENA_MAX=4
+2022-03-16 13:02:52,988 INFO  [main] util.ServerCommandLine: vmName=OpenJDK 64-Bit Server VM, vmVendor=Private Build, vmVersion=25.312-b07
+2022-03-16 13:02:52,989 INFO  [main] util.ServerCommandLine: vmInputArguments=[-Dproc_master, -XX:OnOutOfMemoryError=kill -9 %p, -XX:+UseConcMarkSweepGC, -XX:PermSize=128m, -XX:MaxPermSize=128m, -Dhbase.log.dir=/root/project/hbase/logs, -Dhbase.log.file=hbase--master-hadoop-master.log, -Dhbase.home.dir=/root/project/hbase, -Dhbase.id.str=, -Dhbase.root.logger=INFO,RFA, -Djava.library.path=/usr/local/hadoop/lib/native, -Dhbase.security.logger=INFO,RFAS]
+2022-03-16 13:03:01,582 INFO  [main] regionserver.RSRpcServices: master/hadoop-master/172.19.0.5:16000 server-side HConnection retries=350
+2022-03-16 13:03:03,653 INFO  [main] ipc.SimpleRpcScheduler: Using deadline as user call queue, count=3
+2022-03-16 13:03:04,028 INFO  [main] ipc.RpcServer: master/hadoop-master/172.19.0.5:16000: started 10 reader(s) listening on port=16000
+2022-03-16 13:03:04,863 INFO  [main] impl.MetricsConfig: loaded properties from hadoop-metrics2-hbase.properties
+2022-03-16 13:03:05,866 INFO  [main] impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2022-03-16 13:03:05,866 INFO  [main] impl.MetricsSystemImpl: HBase metrics system started
+2022-03-16 13:03:18,944 INFO  [main] fs.HFileSystem: Added intercepting call to namenode#getBlockLocations so can do block reordering using class class org.apache.hadoop.hbase.fs.HFileSystem$ReorderWALBlocks
+2022-03-16 13:03:21,592 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=master:16000 connecting to ZooKeeper ensemble=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181
+2022-03-16 13:03:21,642 INFO  [main] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2022-03-16 13:03:21,642 INFO  [main] zookeeper.ZooKeeper: Client environment:host.name=hadoop-master
+2022-03-16 13:03:21,647 INFO  [main] zookeeper.ZooKeeper: Client environment:java.version=1.8.0_312
+2022-03-16 13:03:21,648 INFO  [main] zookeeper.ZooKeeper: Client environment:java.vendor=Private Build
+2022-03-16 13:03:21,648 INFO  [main] zookeeper.ZooKeeper: Client environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2022-03-16 13:03:21,648 INFO  [main] zookeeper.ZooKeeper: Client environment:java.class.path=/root/project/hbase/conf:/usr/lib/jvm/java-7-openjdk-amd64//lib/tools.jar:/root/project/hbase:/root/project/hbase/lib/activation-1.1.jar:/root/project/hbase/lib/antisamy-1.4.3.jar:/root/project/hbase/lib/aopalliance-1.0.jar:/root/project/hbase/lib/apacheds-i18n-2.0.0-M15.jar:/root/project/hbase/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/root/project/hbase/lib/api-asn1-api-1.0.0-M20.jar:/root/project/hbase/lib/api-util-1.0.0-M20.jar:/root/project/hbase/lib/asm-3.1.jar:/root/project/hbase/lib/avro-1.7.4.jar:/root/project/hbase/lib/batik-css-1.7.jar:/root/project/hbase/lib/batik-ext-1.7.jar:/root/project/hbase/lib/batik-util-1.7.jar:/root/project/hbase/lib/bsh-core-2.0b4.jar:/root/project/hbase/lib/commons-beanutils-1.7.0.jar:/root/project/hbase/lib/commons-beanutils-core-1.7.0.jar:/root/project/hbase/lib/commons-cli-1.2.jar:/root/project/hbase/lib/commons-codec-1.9.jar:/root/project/hbase/lib/commons-collections-3.2.2.jar:/root/project/hbase/lib/commons-compress-1.4.1.jar:/root/project/hbase/lib/commons-configuration-1.6.jar:/root/project/hbase/lib/commons-daemon-1.0.13.jar:/root/project/hbase/lib/commons-digester-1.8.jar:/root/project/hbase/lib/commons-el-1.0.jar:/root/project/hbase/lib/commons-fileupload-1.2.jar:/root/project/hbase/lib/commons-httpclient-3.1.jar:/root/project/hbase/lib/commons-io-2.4.jar:/root/project/hbase/lib/commons-lang-2.6.jar:/root/project/hbase/lib/commons-logging-1.2.jar:/root/project/hbase/lib/commons-math-2.2.jar:/root/project/hbase/lib/commons-math3-3.1.1.jar:/root/project/hbase/lib/commons-net-3.1.jar:/root/project/hbase/lib/disruptor-3.3.0.jar:/root/project/hbase/lib/esapi-2.1.0.jar:/root/project/hbase/lib/findbugs-annotations-1.3.9-1.jar:/root/project/hbase/lib/guava-12.0.1.jar:/root/project/hbase/lib/guice-3.0.jar:/root/project/hbase/lib/guice-servlet-3.0.jar:/root/project/hbase/lib/hadoop-annotations-2.5.1.jar:/root/project/hbase/lib/hadoop-auth-2.5.1.jar:/root/project/hbase/lib/hadoop-client-2.5.1.jar:/root/project/hbase/lib/hadoop-common-2.5.1.jar:/root/project/hbase/lib/hadoop-hdfs-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-app-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-common-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-core-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-jobclient-2.5.1.jar:/root/project/hbase/lib/hadoop-mapreduce-client-shuffle-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-api-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-client-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-common-2.5.1.jar:/root/project/hbase/lib/hadoop-yarn-server-common-2.5.1.jar:/root/project/hbase/lib/hbase-annotations-1.2.1-tests.jar:/root/project/hbase/lib/hbase-annotations-1.2.1.jar:/root/project/hbase/lib/hbase-client-1.2.1.jar:/root/project/hbase/lib/hbase-common-1.2.1-tests.jar:/root/project/hbase/lib/hbase-common-1.2.1.jar:/root/project/hbase/lib/hbase-examples-1.2.1.jar:/root/project/hbase/lib/hbase-external-blockcache-1.2.1.jar:/root/project/hbase/lib/hbase-hadoop-compat-1.2.1.jar:/root/project/hbase/lib/hbase-hadoop2-compat-1.2.1.jar:/root/project/hbase/lib/hbase-it-1.2.1-tests.jar:/root/project/hbase/lib/hbase-it-1.2.1.jar:/root/project/hbase/lib/hbase-prefix-tree-1.2.1.jar:/root/project/hbase/lib/hbase-procedure-1.2.1.jar:/root/project/hbase/lib/hbase-protocol-1.2.1.jar:/root/project/hbase/lib/hbase-resource-bundle-1.2.1.jar:/root/project/hbase/lib/hbase-rest-1.2.1.jar:/root/project/hbase/lib/hbase-server-1.2.1-tests.jar:/root/project/hbase/lib/hbase-server-1.2.1.jar:/root/project/hbase/lib/hbase-shell-1.2.1.jar:/root/project/hbase/lib/hbase-thrift-1.2.1.jar:/root/project/hbase/lib/htrace-core-3.1.0-incubating.jar:/root/project/hbase/lib/httpclient-4.2.5.jar:/root/project/hbase/lib/httpcore-4.4.1.jar:/root/project/hbase/lib/jackson-core-asl-1.9.13.jar:/root/project/hbase/lib/jackson-jaxrs-1.9.13.jar:/root/project/hbase/lib/jackson-mapper-asl-1.9.13.jar:/root/project/hbase/lib/jackson-xc-1.9.13.jar:/root/project/hbase/lib/jamon-runtime-2.4.1.jar:/root/project/hbase/lib/jasper-compiler-5.5.23.jar:/root/project/hbase/lib/jasper-runtime-5.5.23.jar:/root/project/hbase/lib/java-xmlbuilder-0.4.jar:/root/project/hbase/lib/javax.inject-1.jar:/root/project/hbase/lib/jaxb-api-2.2.2.jar:/root/project/hbase/lib/jaxb-impl-2.2.3-1.jar:/root/project/hbase/lib/jcodings-1.0.8.jar:/root/project/hbase/lib/jersey-client-1.9.jar:/root/project/hbase/lib/jersey-core-1.9.jar:/root/project/hbase/lib/jersey-guice-1.9.jar:/root/project/hbase/lib/jersey-json-1.9.jar:/root/project/hbase/lib/jersey-server-1.9.jar:/root/project/hbase/lib/jets3t-0.9.0.jar:/root/project/hbase/lib/jettison-1.3.3.jar:/root/project/hbase/lib/jetty-6.1.26.jar:/root/project/hbase/lib/jetty-sslengine-6.1.26.jar:/root/project/hbase/lib/jetty-util-6.1.26.jar:/root/project/hbase/lib/joni-2.1.2.jar:/root/project/hbase/lib/jruby-complete-1.6.8.jar:/root/project/hbase/lib/jsch-0.1.42.jar:/root/project/hbase/lib/jsp-2.1-6.1.14.jar:/root/project/hbase/lib/jsp-api-2.1-6.1.14.jar:/root/project/hbase/lib/jsr305-1.3.9.jar:/root/project/hbase/lib/junit-4.12.jar:/root/project/hbase/lib/leveldbjni-all-1.8.jar:/root/project/hbase/lib/libthrift-0.9.3.jar:/root/project/hbase/lib/log4j-1.2.17.jar:/root/project/hbase/lib/metrics-core-2.2.0.jar:/root/project/hbase/lib/nekohtml-1.9.12.jar:/root/project/hbase/lib/netty-all-4.0.23.Final.jar:/root/project/hbase/lib/paranamer-2.3.jar:/root/project/hbase/lib/protobuf-java-2.5.0.jar:/root/project/hbase/lib/servlet-api-2.5-6.1.14.jar:/root/project/hbase/lib/servlet-api-2.5.jar:/root/project/hbase/lib/slf4j-api-1.7.7.jar:/root/project/hbase/lib/slf4j-log4j12-1.7.5.jar:/root/project/hbase/lib/snappy-java-1.0.4.1.jar:/root/project/hbase/lib/spymemcached-2.11.6.jar:/root/project/hbase/lib/xalan-2.7.0.jar:/root/project/hbase/lib/xml-apis-1.3.03.jar:/root/project/hbase/lib/xml-apis-ext-1.3.04.jar:/root/project/hbase/lib/xmlenc-0.52.jar:/root/project/hbase/lib/xom-1.2.5.jar:/root/project/hbase/lib/xz-1.0.jar:/root/project/hbase/lib/zookeeper-3.4.6.jar:/usr/local/hadoop/etc/hadoop:/usr/local/hadoop/share/hadoop/common/lib/log4j-1.2.17.jar:/usr/local/hadoop/share/hadoop/common/lib/jsr305-3.0.0.jar:/usr/local/hadoop/share/hadoop/common/lib/zookeeper-3.4.6.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/usr/local/hadoop/share/hadoop/common/lib/asm-3.2.jar:/usr/local/hadoop/share/hadoop/common/lib/jersey-json-1.9.jar:/usr/local/hadoop/share/hadoop/common/lib/servlet-api-2.5.jar:/usr/local/hadoop/share/hadoop/common/lib/httpclient-4.2.5.jar:/usr/local/hadoop/share/hadoop/common/lib/hadoop-annotations-2.7.2.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-math3-3.1.1.jar:/usr/local/hadoop/share/hadoop/common/lib/jersey-server-1.9.jar:/usr/local/hadoop/share/hadoop/common/lib/stax-api-1.0-2.jar:/usr/local/hadoop/share/hadoop/common/lib/jetty-6.1.26.jar:/usr/local/hadoop/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-logging-1.1.3.jar:/usr/local/hadoop/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-collections-3.2.2.jar:/usr/local/hadoop/share/hadoop/common/lib/jersey-core-1.9.jar:/usr/local/hadoop/share/hadoop/common/lib/curator-framework-2.7.1.jar:/usr/local/hadoop/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hadoop/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-cli-1.2.jar:/usr/local/hadoop/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-net-3.1.jar:/usr/local/hadoop/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-configuration-1.6.jar:/usr/local/hadoop/share/hadoop/common/lib/guava-11.0.2.jar:/usr/local/hadoop/share/hadoop/common/lib/jets3t-0.9.0.jar:/usr/local/hadoop/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/usr/local/hadoop/share/hadoop/common/lib/avro-1.7.4.jar:/usr/local/hadoop/share/hadoop/common/lib/gson-2.2.4.jar:/usr/local/hadoop/share/hadoop/common/lib/xmlenc-0.52.jar:/usr/local/hadoop/share/hadoop/common/lib/hamcrest-core-1.3.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-lang-2.6.jar:/usr/local/hadoop/share/hadoop/common/lib/activation-1.1.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-httpclient-3.1.jar:/usr/local/hadoop/share/hadoop/common/lib/curator-recipes-2.7.1.jar:/usr/local/hadoop/share/hadoop/common/lib/htrace-core-3.1.0-incubating.jar:/usr/local/hadoop/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/usr/local/hadoop/share/hadoop/common/lib/junit-4.11.jar:/usr/local/hadoop/share/hadoop/common/lib/hadoop-auth-2.7.2.jar:/usr/local/hadoop/share/hadoop/common/lib/slf4j-api-1.7.10.jar:/usr/local/hadoop/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/hadoop/share/hadoop/common/lib/jsch-0.1.42.jar:/usr/local/hadoop/share/hadoop/common/lib/netty-3.6.2.Final.jar:/usr/local/hadoop/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/usr/local/hadoop/share/hadoop/common/lib/httpcore-4.2.5.jar:/usr/local/hadoop/share/hadoop/common/lib/xz-1.0.jar:/usr/local/hadoop/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/hadoop/share/hadoop/common/lib/mockito-all-1.8.5.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-io-2.4.jar:/usr/local/hadoop/share/hadoop/common/lib/paranamer-2.3.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-digester-1.8.jar:/usr/local/hadoop/share/hadoop/common/lib/jsp-api-2.1.jar:/usr/local/hadoop/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-compress-1.4.1.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/usr/local/hadoop/share/hadoop/common/lib/jettison-1.1.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-codec-1.4.jar:/usr/local/hadoop/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/hadoop/share/hadoop/common/lib/jetty-util-6.1.26.jar:/usr/local/hadoop/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar:/usr/local/hadoop/share/hadoop/common/lib/curator-client-2.7.1.jar:/usr/local/hadoop/share/hadoop/common/hadoop-common-2.7.2.jar:/usr/local/hadoop/share/hadoop/common/hadoop-nfs-2.7.2.jar:/usr/local/hadoop/share/hadoop/common/hadoop-common-2.7.2-tests.jar:/usr/local/hadoop/share/hadoop/hdfs:/usr/local/hadoop/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/asm-3.2.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/guava-11.0.2.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/htrace-core-3.1.0-incubating.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/netty-all-4.0.23.Final.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/commons-io-2.4.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/usr/local/hadoop/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-nfs-2.7.2.jar:/usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-2.7.2.jar:/usr/local/hadoop/share/hadoop/hdfs/hadoop-hdfs-2.7.2-tests.jar:/usr/local/hadoop/share/hadoop/yarn/lib/log4j-1.2.17.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jsr305-3.0.0.jar:/usr/local/hadoop/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/usr/local/hadoop/share/hadoop/yarn/lib/asm-3.2.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jersey-json-1.9.jar:/usr/local/hadoop/share/hadoop/yarn/lib/servlet-api-2.5.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jersey-server-1.9.jar:/usr/local/hadoop/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jetty-6.1.26.jar:/usr/local/hadoop/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/usr/local/hadoop/share/hadoop/yarn/lib/commons-collections-3.2.2.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jersey-core-1.9.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hadoop/share/hadoop/yarn/lib/commons-cli-1.2.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/usr/local/hadoop/share/hadoop/yarn/lib/guava-11.0.2.jar:/usr/local/hadoop/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/usr/local/hadoop/share/hadoop/yarn/lib/commons-lang-2.6.jar:/usr/local/hadoop/share/hadoop/yarn/lib/activation-1.1.jar:/usr/local/hadoop/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/usr/local/hadoop/share/hadoop/yarn/lib/guice-3.0.jar:/usr/local/hadoop/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/usr/local/hadoop/share/hadoop/yarn/lib/zookeeper-3.4.6-tests.jar:/usr/local/hadoop/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/usr/local/hadoop/share/hadoop/yarn/lib/xz-1.0.jar:/usr/local/hadoop/share/hadoop/yarn/lib/commons-io-2.4.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/usr/local/hadoop/share/hadoop/yarn/lib/aopalliance-1.0.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jettison-1.1.jar:/usr/local/hadoop/share/hadoop/yarn/lib/javax.inject-1.jar:/usr/local/hadoop/share/hadoop/yarn/lib/commons-codec-1.4.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/usr/local/hadoop/share/hadoop/yarn/lib/jersey-client-1.9.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-api-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-common-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-common-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-tests-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-client-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-registry-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.7.2.jar:/usr/local/hadoop/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/asm-3.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/hadoop-annotations-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/guice-3.0.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/junit-4.11.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/xz-1.0.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/usr/local/hadoop/share/hadoop/mapreduce/lib/javax.inject-1.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.2-tests.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.2.jar:/usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.2.jar:/usr/local/hadoop/contrib/capacity-scheduler/*.jar
+2022-03-16 13:03:21,653 INFO  [main] zookeeper.ZooKeeper: Client environment:java.library.path=/usr/local/hadoop/lib/native
+2022-03-16 13:03:21,653 INFO  [main] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2022-03-16 13:03:21,653 INFO  [main] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2022-03-16 13:03:21,653 INFO  [main] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2022-03-16 13:03:21,653 INFO  [main] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2022-03-16 13:03:21,653 INFO  [main] zookeeper.ZooKeeper: Client environment:os.version=4.15.0-166-generic
+2022-03-16 13:03:21,654 INFO  [main] zookeeper.ZooKeeper: Client environment:user.name=root
+2022-03-16 13:03:21,654 INFO  [main] zookeeper.ZooKeeper: Client environment:user.home=/root
+2022-03-16 13:03:21,654 INFO  [main] zookeeper.ZooKeeper: Client environment:user.dir=/root/project/bin
+2022-03-16 13:03:21,670 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181 sessionTimeout=90000 watcher=master:160000x0, quorum=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181, baseZNode=/hbase-unsecure
+2022-03-16 13:03:21,888 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:21,991 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:22,145 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:22,147 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:22,281 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:22,301 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:23,404 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:23,405 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:23,507 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:23,508 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:23,609 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:23,611 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:24,715 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:24,716 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:24,818 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:24,819 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:24,925 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:24,927 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:26,031 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:26,033 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:26,136 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:26,137 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:26,247 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:26,249 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:27,350 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:27,352 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:27,467 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:27,470 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:27,572 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:27,573 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:28,675 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:28,676 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:28,778 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:28,780 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:28,881 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:28,883 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:29,987 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:29,988 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:30,091 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:30,092 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:30,197 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:30,199 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:31,301 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:31,302 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:31,405 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:31,407 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:31,509 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:31,512 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:32,614 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:32,617 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:32,720 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:32,722 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:32,825 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:32,830 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:33,935 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:33,937 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:34,039 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:34,041 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:34,143 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:34,145 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:35,248 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:35,249 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:35,351 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:35,353 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:35,456 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:35,458 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:36,560 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:36,562 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:36,664 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:36,666 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:36,768 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:36,770 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:37,873 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:37,876 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:37,978 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:37,979 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:38,081 INFO  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave1.hadoop/172.19.0.3:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:38,087 WARN  [main-SendThread(hadoop-slave1.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:39,191 INFO  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave2.hadoop/172.19.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:39,193 WARN  [main-SendThread(hadoop-slave2.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+2022-03-16 13:03:39,296 ERROR [main] zookeeper.RecoverableZooKeeper: ZooKeeper create failed after 4 attempts
+2022-03-16 13:03:39,296 INFO  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Opening socket connection to server hadoop-slave3.hadoop/172.19.0.4:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-16 13:03:39,297 ERROR [main] master.HMasterCommandLine: Master exiting
+java.lang.RuntimeException: Failed construction of Master: class org.apache.hadoop.hbase.master.HMaster. 
+	at org.apache.hadoop.hbase.master.HMaster.constructMaster(HMaster.java:2401)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine.startMaster(HMasterCommandLine.java:232)
+	at org.apache.hadoop.hbase.master.HMasterCommandLine.run(HMasterCommandLine.java:138)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.hadoop.hbase.util.ServerCommandLine.doMain(ServerCommandLine.java:126)
+	at org.apache.hadoop.hbase.master.HMaster.main(HMaster.java:2411)
+Caused by: org.apache.hadoop.hbase.ZooKeeperConnectionException: master:160000x0, quorum=hadoop-slave1:2181,hadoop-slave2:2181,hadoop-slave3:2181, baseZNode=/hbase-unsecure Unexpected KeeperException creating base node
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.createBaseZNodes(ZooKeeperWatcher.java:206)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.<init>(ZooKeeperWatcher.java:187)
+	at org.apache.hadoop.hbase.regionserver.HRegionServer.<init>(HRegionServer.java:583)
+	at org.apache.hadoop.hbase.master.HMaster.<init>(HMaster.java:364)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.hbase.master.HMaster.constructMaster(HMaster.java:2394)
+	... 5 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase-unsecure
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.createNonSequential(RecoverableZooKeeper.java:575)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.create(RecoverableZooKeeper.java:554)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.createWithParents(ZKUtil.java:1204)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.createWithParents(ZKUtil.java:1182)
+	at org.apache.hadoop.hbase.zookeeper.ZooKeeperWatcher.createBaseZNodes(ZooKeeperWatcher.java:194)
+	... 13 more
+2022-03-16 13:03:39,298 WARN  [main-SendThread(hadoop-slave3.hadoop:2181)] zookeeper.ClientCnxn: Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
