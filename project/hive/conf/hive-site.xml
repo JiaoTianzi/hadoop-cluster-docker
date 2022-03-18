@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<property>
+		<name>hive.exec.scratchdir</name>
+		<value>/user/hive/tmp</value>
+		<description>指定了Hive数据在HDFS上的临时文件目录</description>
+	</property>
+	<property>
+		<name>hive.exec.local.scratchdir</name>
+		<value>/root/hive/execLocal/${user.name}</value>
+		<description>指定了Hive数据在Localhost上的临时文件目录</description>
+	</property>
+	<property>
+		<name>hive.downloaded.resources.dir</name>
+		<value>/root/hive/session/${hive.session.id}_resources/</value>
+		<description>指定了Hive数据在Local resource上的临时文件目录</description>
+	</property>
+	<property>
+		<name>hive.metastore.warehouse.dir</name>
+		<value>/user/hive/warehouse</value>
+		<description>指定了Hive数据在HDFS上的临时文件目录</description>
+	</property>
+	<property>
+		<name>hive.querylog.location</name>
+		<value>/root/hive_querylog</value>
+		<description>Location of Hive run time structured log file</description>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionURL</name>
+		<value>jdbc:mysql://172.19.0.6:3306/hive?createDatabaseIfNotExist=true&amp;useSSL=false&amp;characterEncoding=utf-8</value>
+		<description>通过jdbc协议连接mysql的hive库</description>
+	</property>
+
+	<property>
+		<name>javax.jdo.option.ConnectionDriverName</name>
+		<value>com.mysql.jdbc.Driver</value>
+		<description>jdbc的mysql驱动</description>
+	</property>
+
+	<property>
+		<name>javax.jdo.option.ConnectionUserName</name>
+		<value>root</value>
+		<description>mysql用户名</description>
+	</property>
+	  
+	<property>
+		<name>javax.jdo.option.ConnectionPassword</name>
+		<value>123456</value>
+		<description>mysql用户密码</description>
+	</property>
+
+	<!--property>    
+	<name>hive.metastore.schema.verification</name>    
+	<value>false</value>    
+	<description>   </description>    
+	</property-->
+
+	<property>
+		<name>hive.hwi.war.file</name>
+		<value>lib/hive-hwi-1.2.1.war</value>
+		<description>hive的web页面</description>
+	</property>
+</configuration>

@@ -7,4 +7,6 @@ echo 'export SPARK_HOME=/root/project/spark' >> /etc/profile
 echo 'export PATH=$PATH:$SPARK_HOME/bin' >> /etc/profile
 echo 'export SCALA_HOME=/root/project/scala' >> /etc/profile
 echo 'export PATH=$PATH:$SCALA_HOME/bin' >> /etc/profile
+echo 'export HIVE_HOME=/root/project/hive' >> /etc/profile
+echo 'export PATH=$PATH:$HIVE_HOME/bin' >> /etc/profile
 source /etc/profile
