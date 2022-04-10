@@ -38,7 +38,8 @@ sudo ./start-container.sh
 
 ```
 **init env**
-##cd project/bin && ./env.sh
+##master: cd project/bin/env_init && ./env.sh
+##slave*: cd env_init && ./env_slave.sh
 ##zkCli.sh
 ##rmr /hbase
 ##rmr /hbase-unsecure
