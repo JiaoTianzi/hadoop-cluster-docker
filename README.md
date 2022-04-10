@@ -31,7 +31,7 @@ sudo docker network create --driver=bridge hadoop
 
 ```
 cd hadoop-cluster-docker
-sudo ./start-container.sh
+sudo ./startAllNode.sh
 ##sudo docker start hadoop-slave2 hadoop-slave1 hadoop-master
 ##sudo docker stop hadoop-slave2 hadoop-slave1 hadoop-master
 ```
@@ -39,7 +39,7 @@ sudo ./start-container.sh
 ```
 **init env**
 ##master: cd project/bin/env_init && ./env.sh
-##slave*: cd env_init && ./env_slave.sh
+##slave*: cd project/env_init && ./env_slave.sh
 ##zkCli.sh
 ##rmr /hbase
 ##rmr /hbase-unsecure
